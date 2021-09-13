@@ -1,17 +1,21 @@
 package com.keyrus.kit.quiz.service.impl;
 
 import com.keyrus.kit.quiz.dto.UserDTO;
+
 import com.keyrus.kit.quiz.form.UserForm;
 import com.keyrus.kit.quiz.model.User;
 import com.keyrus.kit.quiz.repository.UserRepository;
 import com.keyrus.kit.quiz.service.UserService;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Builder
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
